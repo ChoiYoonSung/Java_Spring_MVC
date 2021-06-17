@@ -6,11 +6,10 @@
 	alert('회원이 탈퇴처리 되었습니다.');
 	
 	<c:if test="${empty loginUser}">
-		window.opener.parent.location.href="/";
+		window.opener.parent.location.href="<%=request.getContextPath() %>";
 	</c:if>
 	<c:if test="${!empty loginUser}">
 		window.opener.parent.location.reload();
 	</c:if>
-	
-	CloseWindow();
+	window.close();
 </script>

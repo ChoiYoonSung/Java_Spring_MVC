@@ -59,7 +59,7 @@ function upload_go(){
 	};
 	
 	$.ajax({
-		url:"/member/picture.do",
+		url:"picture.do",
 		data:formData,
 		type:'post',
 		processData:false,
@@ -99,7 +99,7 @@ function idCheck_go(){
 	}
 	
 	$.ajax({
-		url:"/member/idCheck.do?id="+input_ID.val(),
+		url:"idCheck.do?id="+input_ID.val(),
 		type:"get",
 		success:function(result){
 			console.log(result);

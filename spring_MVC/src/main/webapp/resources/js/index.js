@@ -1,6 +1,6 @@
 function subMenu(mcode){
 	if(mcode != 'M000000'){
-	 $.getJSON("/subMenu.do?mCode="+mcode, function(data){
+	 $.getJSON("subMenu.do?mCode="+mcode, function(data){
 		printData(data, $('.subMenuList'),$('#subMenu-list-template'), '.subMenu');
 	 });
 	}else{

@@ -16,5 +16,5 @@
 </div>
 <%@ include file="/WEB-INF/views/include/js.jsp" %>
 </body>
-<script src="/resources/js/common.js"></script>
+<script src="<%=request.getContextPath() %>/resources/js/common.js"></script>
 </html>
