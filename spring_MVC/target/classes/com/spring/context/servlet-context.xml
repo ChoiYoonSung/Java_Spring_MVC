@@ -31,4 +31,15 @@
 	
 	<context:component-scan base-package="com.spring.controller" />
 	
+	<interceptors>
+		<interceptor>
+			<mapping path="/**/regist.do"/>
+			<mapping path="/**/modify.do"/>
+			<beans:bean class="com.spring.interceptor.XSSInterceptor"></beans:bean>
+		</interceptor>
+		<interceptor>
+			<mapping path="/common/login.do"/>
+			<beans:bean class="com.spring.interceptor.LoginUserLogInterceptor"></beans:bean>
+		</interceptor>
+	</interceptors>
 </beans:beans>
