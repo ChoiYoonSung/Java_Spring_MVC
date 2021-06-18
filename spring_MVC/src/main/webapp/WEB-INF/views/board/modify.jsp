@@ -41,7 +41,7 @@
 					</div><!--end card-header  -->
 					<div class="card-body">
 						<form role="form" method="post" action="modify.do" name="modifyForm">
-							<input type="hidden" id="nno" name="nno" value="${board.bno }"/>
+							<input type="hidden" id="bno" name="bno" value="${board.bno }"/>
 							<div class="form-group">
 								<label for="title">제 목</label> 
 								<input type="text" id="title" name='title' class="form-control" value="${board.title }">
